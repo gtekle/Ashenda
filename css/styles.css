@@ -1,34 +1,37 @@
-*, *::before, *::after{
+*,
+*::before,
+*::after {
   box-sizing: border-box;
   padding: 0;
   margin: 0;
 }
 
-html{
+html {
   font-size: 16px;
 }
 
-body{
-  margin: 0;
+body {
   background-color: #fff;
   margin: 0 auto;
   max-width: 768px;
   font-family: 'Lato', sans-serif;
 }
 
-.container{
+.container {
   margin: 0 16px;
   display: flex;
 }
 
-.header{
+.header {
   width: 100%;
   min-height: 100vh;
   padding: 12px 0;
   background-color: rgba(211, 211, 211, 0.4);
 }
 
-.header .logo, .nav-list, .mobile-nav-menu {
+.header .logo,
+.nav-list,
+.mobile-nav-menu {
   display: none;
 }
 
@@ -43,14 +46,14 @@ body{
   margin: 8px 0;
 }
 
-.header .event-title{
+.header .event-title {
   color: #ec5242;
   font-size: 42px;
   font-weight: 700;
   text-transform: uppercase;
 }
 
-.header .short-description{
+.header .short-description {
   border: 2px solid #fff;
   color: #272a31;
   line-height: 24px;
@@ -58,7 +61,7 @@ body{
   margin: 16px 0;
 }
 
-.header .event-date{
+.header .event-date {
   color: #272a31;
   font-size: 26px;
   font-weight: 700;
@@ -68,9 +71,10 @@ body{
   color: #272a31;
   margin: 16px 0;
 }
+
 .main {
   background-image: url("../img/main-section-desktop-background-init.png");
-  background-size: contain contain;
+  background-size: contain;
   background-repeat: repeat;
   padding: 24px 0;
 }
@@ -96,7 +100,7 @@ body{
   padding: 12px;
   justify-content: space-between;
   align-items: center;
-  width:calc(100% - 24px);
+  width: calc(100% - 24px);
   background-color: rgba(211, 211, 211, 0.1);
 }
 
@@ -139,7 +143,7 @@ body{
   align-items: center;
   margin: 12px;
   padding: 12px;
-  width:calc(100% - 24px);
+  width: calc(100% - 24px);
 }
 
 .featured-speakers .speaker .speaker-info {
