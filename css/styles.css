@@ -56,6 +56,13 @@ img {
   padding: 24px 0;
 }
 
+.header .about-hero {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 12px 16px;
+}
+
 .header .event-theme {
   color: #ec5242;
   margin: 8px 0;
@@ -74,6 +81,19 @@ img {
   line-height: 24px;
   padding: 20px 12px;
   margin: 16px 0;
+}
+
+.header .about-hero .short-description {
+  background-color: #fff;
+  text-align: center;
+}
+
+.header .about-hero .contact-us {
+  text-align: center;
+}
+
+.header .about-hero .contact-us .contact-us-text {
+  padding: 16px 0;
 }
 
 .header .event-date {
@@ -136,6 +156,31 @@ img {
   width: 60%;
 }
 
+.about-ashenda-2022-log .container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 12px 16px;
+  padding: 12px 24px;
+}
+
+.about-ashenda-2022-log .ashenda-log-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 16px;
+  width: 100%;
+  margin: 12px 0;
+}
+
+.about-ashenda-2022-log .ashenda-log-container .ashenda-logo-text {
+  margin-left: 16px;
+  font-size: 28px;
+  line-height: 28px;
+  color: #272a31;
+  font-weight: 700;
+}
+
 .featured-speakers {
   display: flex;
   flex-direction: column;
@@ -177,6 +222,50 @@ img {
   color: #ec5242;
   font-weight: 600;
   margin: 14px 0;
+}
+
+.previous-ashenda-festivals .container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 12px 16px;
+  padding: 12px 24px;
+}
+
+.previous-ashenda-festivals .previous-festivals-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.previous-ashenda-festivals .previous-festivals-container .previous-festival {
+  position: relative;
+  text-align: center;
+  min-height: 20px;
+  margin: 12px 0;
+}
+
+.previous-ashenda-festivals .previous-festivals-container .festival-year-place {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(236, 82, 66, 0.75);
+  color: #fff;
+  font-size: 22px;
+  font-weight: 500;
+}
+
+.previous-ashenda-festivals
+  .previous-festivals-container
+  .festival-year-place
+  .festival-year {
+  font-size: 36px;
+  font-weight: 700;
 }
 
 .partners {
