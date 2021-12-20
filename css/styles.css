@@ -1,0 +1,158 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+html {
+  font-size: 16px;
+}
+
+body {
+  background-color: #fff;
+  margin: 0 auto;
+  max-width: 768px;
+  font-family: 'Lato', sans-serif;
+}
+
+.container {
+  margin: 0 16px;
+  display: flex;
+}
+
+.header {
+  width: 100%;
+  min-height: 100vh;
+  padding: 12px 0;
+  background-color: rgba(211, 211, 211, 0.4);
+}
+
+.header .logo,
+.nav-list,
+.mobile-nav-menu {
+  display: none;
+}
+
+.header .hero {
+  margin-top: 48px;
+  margin-left: -16px;
+  padding: 24px 0;
+}
+
+.header .event-theme {
+  color: #ec5242;
+  margin: 8px 0;
+}
+
+.header .event-title {
+  color: #ec5242;
+  font-size: 42px;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.header .short-description {
+  border: 2px solid #fff;
+  color: #272a31;
+  line-height: 24px;
+  padding: 20px 12px;
+  margin: 16px 0;
+}
+
+.header .event-date {
+  color: #272a31;
+  font-size: 26px;
+  font-weight: 700;
+}
+
+.header .event-place {
+  color: #272a31;
+  margin: 16px 0;
+}
+
+.main {
+  background-image: url("../img/main-section-desktop-background-init.png");
+  background-size: contain;
+  background-repeat: repeat;
+  padding: 24px 0;
+}
+
+.main .section-title {
+  text-align: center;
+  color: #fff;
+  font-size: 20px;
+  width: 100%;
+}
+
+.main .section-title-underline {
+  width: 50px;
+  font-size: 2px;
+  margin: 16px 0;
+  margin-left: calc(50% - 25px);
+  border: 1px solid#ec5242;
+}
+
+.main .program {
+  display: flex;
+  margin: 12px;
+  padding: 12px;
+  justify-content: space-between;
+  align-items: center;
+  width: calc(100% - 24px);
+  background-color: rgba(211, 211, 211, 0.1);
+}
+
+.main .program-title {
+  color: #ec5242;
+  width: 20%;
+  font-size: 20px;
+  font-weight: 700;
+  text-transform: capitalize;
+}
+
+.main .program-description {
+  color: #fff;
+  line-height: 24px;
+  width: 60%;
+}
+
+.featured-speakers {
+  padding: 24px 0;
+}
+
+.featured-speakers .section-title {
+  text-align: center;
+  color: #272a31;
+  font-size: 20px;
+  width: 100%;
+}
+
+.featured-speakers .section-title-underline {
+  width: 50px;
+  font-size: 2px;
+  margin: 16px 0;
+  margin-left: calc(50% - 25px);
+  border: 1px solid#ec5242;
+}
+
+.featured-speakers .speaker {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 12px;
+  padding: 12px;
+  width: calc(100% - 24px);
+}
+
+.featured-speakers .speaker .speaker-info {
+  width: 70%;
+  color: #272a31;
+}
+
+.featured-speakers .speaker .speaker-info .job-title {
+  color: #ec5242;
+  font-weight: 600;
+  margin: 14px 0;
+}
