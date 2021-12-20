@@ -257,6 +257,11 @@ img {
   width: calc(100% - 24px);
 }
 
+.featured-speakers .speaker .thumbnail-image img {
+  max-height: 170px;
+  max-width: 160px;
+}
+
 .featured-speakers .speaker .speaker-info {
   width: 60%;
   color: #272a31;
@@ -304,10 +309,7 @@ img {
   font-weight: 500;
 }
 
-.previous-ashenda-festivals
-  .previous-festivals-container
-  .festival-year-place
-  .festival-year {
+.previous-ashenda-festivals .festival-year-place .festival-year {
   font-size: 36px;
   font-weight: 700;
 }
