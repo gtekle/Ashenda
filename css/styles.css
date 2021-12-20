@@ -284,8 +284,8 @@ img {
 }
 
 .featured-speakers .speaker .thumbnail {
-  max-height: 170px;
-  max-width: 150;
+  max-height: 150px;
+  max-width: 125px;
   position: relative;
   margin-top: 20px;
   margin-left: 20px;
