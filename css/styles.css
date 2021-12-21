@@ -188,7 +188,7 @@ a:hover {
 }
 
 .section-title-underline {
-  width: 50px;
+  width: 30px;
   font-size: 2px;
   margin: 16px 0;
   border: 1px solid#ec5242;
@@ -411,6 +411,10 @@ a:hover {
   margin-right: 16px;
 }
 
+.about-partners {
+  display: block;
+}
+
 .footer {
   margin: 12px 16px;
   padding: 36px;
@@ -446,6 +450,11 @@ a:hover {
     -moz-box-shadow: 2px 2px 4px #d3d3d3;
     -webkit-box-shadow: 2px 2px 4px #d3d3d3;
     box-shadow: 2px 2px 4px #d3d3d3;
+  }
+
+  .about .nav-bar {
+    padding-left: 20%;
+    margin-bottom: 12px;
   }
 
   .header .logo,
@@ -524,6 +533,16 @@ a:hover {
     margin-bottom: 16px;
   }
 
+  .header .about-hero .event-title {
+    font-size: 48px;
+    line-height: 48px;
+  }
+
+  .header .about-hero .short-description {
+    outline: 1px solid #d3d3d3;
+    max-width: 70%;
+  }
+
   .header .event-title {
     font-size: 66px;
     line-height: 66px;
@@ -577,6 +596,20 @@ a:hover {
     font-weight: 500;
   }
 
+  .about-ashenda-2022-log {
+    padding-left: 5%;
+  }
+
+  .about-ashenda-2022-log .section-title {
+    padding-top: 36px;
+  }
+
+  .about-ashenda-2022-log .ashenda-log-container {
+    outline: 1px solid #d3d3d3;
+    width: auto;
+    margin: 24px 0;
+  }
+
   .featured-speakers .speaker-container {
     display: flex;
     flex-direction: row;
@@ -585,5 +618,31 @@ a:hover {
 
   .featured-speakers .speaker {
     max-width: 45%;
+  }
+
+  .previous-ashenda-festivals {
+    border-top: 1px solid #d3d3d3;
+    padding-top: 24px;
+    padding-left: 15%;
+  }
+
+  .previous-ashenda-festivals .previous-festivals-container {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 100%;
+    padding-top: 24px;
+  }
+
+  .previous-festivals-container .previous-festival {
+    width: 49%;
+  }
+
+  .about-partners {
+    display: none;
+  }
+
+  .footer .about-container {
+    padding-left: 10%;
   }
 }
