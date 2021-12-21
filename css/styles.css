@@ -642,7 +642,21 @@ a:hover {
     display: none;
   }
 
+  .footer {
+    background-color: #272a31;
+    color: #fff;
+  }
+
   .footer .about-container {
-    padding-left: 10%;
+    padding-left: 5%;
+  }
+
+  .footer .about-container .ashenda-logo-footer {
+    width: 50%;
+    text-align: center;
+  }
+
+  .footer .about-container .ashenda-logo-footer p {
+    display: inline-block;
   }
 }
