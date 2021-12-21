@@ -324,6 +324,10 @@ a:hover {
   top: 0;
 }
 
+.featured-speakers .speaker .thumbnail-image .black-white-pattern-bg-blur {
+  display: none;
+}
+
 .featured-speakers .speaker .thumbnail {
   max-height: 150px;
   max-width: 125px;
@@ -623,6 +627,19 @@ a:hover {
 
   .featured-speakers .speaker {
     max-width: 45%;
+  }
+
+  .featured-speakers .speaker .thumbnail-image .black-white-pattern-bg-blur {
+    display: block;
+    max-width: 75%;
+    max-height: 75%;
+    position: absolute;
+    left: 0;
+    top: 0;
+  }
+
+  .featured-speakers .speaker .thumbnail-image .black-white-pattern-bg {
+    display: none;
   }
 
   .previous-ashenda-festivals {
