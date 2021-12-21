@@ -559,4 +559,14 @@ a:hover {
     text-transform: uppercase;
     font-weight: 500;
   }
+
+  .featured-speakers .speaker-container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+
+  .featured-speakers .speaker {
+    max-width: 45%;
+  }
 }
