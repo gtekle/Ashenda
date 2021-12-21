@@ -6,6 +6,11 @@
   margin: 0;
 }
 
+@font-face {
+  font-family: cocogoose;
+  src: url('../fonts/cocogoose/Cocogoose\Pro-trial.ttf');
+}
+
 html {
   font-size: 16px;
 }
@@ -132,8 +137,9 @@ a:hover {
   background-image: url('../img/artist-eden-gebreselassie-pic.png');
   background-size: contain;
   color: #ec5242;
-  font-size: 48px;
+  font-size: 36px;
   font-weight: 700;
+  font-family: cocogoose;
   text-transform: uppercase;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -165,6 +171,7 @@ a:hover {
   color: #272a31;
   font-size: 26px;
   font-weight: 700;
+  font-family: cocogoose;
 }
 
 .header .event-place {
@@ -553,8 +560,8 @@ a:hover {
   }
 
   .header .event-title {
-    font-size: 66px;
-    line-height: 66px;
+    font-size: 60px;
+    line-height: 60px;
   }
 
   .main .program-container {
