@@ -146,6 +146,15 @@ a:hover {
   background-clip: text;
 }
 
+.header .about-hero .about-event-title {
+  color: #ec5242;
+  font-size: 36px;
+  font-weight: 700;
+  font-family: cocogoose;
+  text-transform: uppercase;
+  text-align: justify;
+}
+
 .header .short-description {
   border: 2px solid #fff;
   color: #272a31;
@@ -549,7 +558,7 @@ a:hover {
     margin-bottom: 16px;
   }
 
-  .header .about-hero .event-title {
+  .header .about-hero .about-event-title {
     font-size: 48px;
     line-height: 48px;
   }
