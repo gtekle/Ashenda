@@ -30,41 +30,46 @@
   <body>
     <header class="header">
       <div class="container">
-        <div class="logo">
-          <a href="./index.html" class="logo-link">
-            <img src="./img/ashenda-icon.png" alt="Ashenda icon" />
-            <span>
-              Ashenda Tigrai <br />
-              Festival 2022
-            </span>
-          </a>
+        <div class="nav-bar">
+          <div class="logo">
+            <a href="./index.html" class="logo-link">
+              <img src="./img/ashenda-icon.png" alt="Ashenda icon" />
+              <div class="logo-text-container">
+                <p class="primary-logo-text">Ashenda Tigrai</p>
+                <p class="secondary-logo-text">Festival 2022</p>
+              </div>
+            </a>
+          </div>
+
+          <!-- desktop menu -->
+          <nav class="nav-menu">
+            <a href="#" class="btn-mobile-menu">
+              <i class="fas fa-bars"></i>
+            </a>
+            <ul class="nav-list">
+              <li class="nav-link"><a href="./about.html">About</a></li>
+              <li class="nav-link"><a href="#program">Program</a></li>
+              <li class="nav-link"><a href="#join">Join</a></li>
+              <li class="nav-link"><a href="#sponsor">Sponsor</a></li>
+              <li class="nav-link"><a href="#news">Contact</a></li>
+            </ul>
+
+            <button type="button" class="btn btn-compain" href="./index.html">
+              Ashenda Compain
+            </button>
+          </nav>
+
+          <!-- mobile nav -->
+          <nav class="mobile-nav-menu">
+            <a href="#" class="btn-menu-close">
+              <i class="fas fa-times"></i>
+            </a>
+            <ul class="mobile-nav-list">
+              <li class="nav-link"><a href="./index.html">Home</a></li>
+              <li class="nav-link"><a href="./about.html">About</a></li>
+            </ul>
+          </nav>
         </div>
-
-        <!-- desktop menu -->
-        <nav class="nav-menu">
-          <a href="#" class="btn-mobile-menu">
-            <i class="fas fa-bars"></i>
-          </a>
-          <ul class="nav-list">
-            <li class="nav-link"><a href="#about">Portfolio</a></li>
-            <li class="nav-link"><a href="#program">About</a></li>
-            <li class="nav-link"><a href="#join">Contact</a></li>
-            <li class="nav-link"><a href="#sponsor">About</a></li>
-            <li class="nav-link"><a href="#news">Contact</a></li>
-          </ul>
-        </nav>
-
-        <!-- mobile nav -->
-        <nav class="mobile-nav-menu">
-          <a href="#" class="btn-menu-close">
-            <i class="fas fa-times"></i>
-          </a>
-          <ul class="mobile-nav-list">
-            <li class="nav-link"><a href="./index.html">Home</a></li>
-            <li class="nav-link"><a href="./about.html">About</a></li>
-          </ul>
-        </nav>
-
         <div class="hero">
           <p class="event-theme">"Hello! Sharing world"</p>
           <h1 class="event-title">
@@ -87,213 +92,246 @@
       <div class="container">
         <h2 class="section-title">Main Program</h2>
         <hr class="section-title-underline" />
-
-        <div class="program">
-          <i>icon</i>
-          <h3 class="program-title">Lecture</h3>
-          <p class="program-description">
-            Program description goes here ... Program description goes here
-          </p>
-        </div>
-        <div class="program">
-          <i>icon</i>
-          <h3 class="program-title">forum</h3>
-          <p class="program-description">Program description goes here</p>
-        </div>
-        <div class="program">
-          <i>icon</i>
-          <h3 class="program-title">workshop</h3>
-          <p class="program-description">Program description goes here</p>
+        <div class="program-container">
+          <div class="program">
+            <div class="program-icon">Icon</div>
+            <h3 class="program-title">Exhibition</h3>
+            <p class="program-description">
+              you'll have a chance to see how Ashenda was celebrated from
+              centuries ago.
+            </p>
+          </div>
+          <div class="program">
+            <div class="program-icon">Icon</div>
+            <h3 class="program-title">Exhibition</h3>
+            <p class="program-description">
+              you'll have a chance to see how Ashenda was celebrated from
+              centuries ago.
+            </p>
+          </div>
+          <div class="program">
+            <div class="program-icon">Icon</div>
+            <h3 class="program-title">Exhibition</h3>
+            <p class="program-description">
+              you'll have a chance to see how Ashenda was celebrated from
+              centuries ago.
+            </p>
+          </div>
+          <div class="program">
+            <div class="program-icon">Icon</div>
+            <h3 class="program-title">Exhibition</h3>
+            <p class="program-description">
+              you'll have a chance to see how Ashenda was celebrated from
+              centuries ago.
+            </p>
+          </div>
+          <div class="program">
+            <div class="program-icon">Icon</div>
+            <h3 class="program-title">Exhibition</h3>
+            <p class="program-description">
+              you'll have a chance to see how Ashenda was celebrated from
+              centuries ago.
+            </p>
+          </div>
         </div>
         <div class="join-ashenda-2022">
           <button class="btn-join-ashenda-2022" type="button">
             Join Ashenda Festival 2022
           </button>
+          <a class="see-whole-program-link" href="#">see the whole program</a>
         </div>
       </div>
     </main>
 
     <section class="featured-speakers">
-      <h2 class="section-title">Featured Speakers</h2>
-      <hr class="section-title-underline" />
-      <div class="speaker">
-        <div class="thumbnail-image">
-          <img
-            class="black-white-pattern-bg"
-            src="./img/black-and-white-square-mat.png"
-            alt=""
-          />
-          <img
-            class="thumbnail"
-            src="./img/president-sahle-work-zewdie.jpg"
-            alt="speaker thumbnail"
-          />
-        </div>
-        <div class="speaker-info">
-          <h4 class="name">H.E Sahle-Work Zewde</h4>
-          <p class="job-title">
-            President of Federal Democratic Republic of Ethiopia
-          </p>
-          <p class="program-description">
-            Benkler studies commons-based peer production, and published his
-            seminal book The Wealth of Networks in 2006.
-          </p>
-        </div>
-      </div>
-      <div class="speaker">
-        <div class="thumbnail-image">
-          <img
-            class="black-white-pattern-bg"
-            src="./img/black-and-white-square-mat.png"
-            alt=""
-          />
-          <img
-            class="thumbnail"
-            src="./img/artist-somon-bayre-pic.png"
-            alt="speaker thumbnail"
-          />
-        </div>
-        <div class="speaker-info">
-          <h4 class="name">Artist Solomon Bayre</h4>
-          <p class="job-title">Reknowned Tigria Singer.</p>
-          <p class="program-description">
-            Benkler studies commons-based peer production, and published his
-            seminal book The Wealth of Networks in 2006.
-          </p>
-        </div>
-      </div>
-      <div class="speaker">
-        <div class="thumbnail-image">
-          <img
-            class="black-white-pattern-bg"
-            src="./img/black-and-white-square-mat.png"
-            alt=""
-          />
-          <img
-            class="thumbnail"
-            src="./img/artist-tirhase-tareke-pic.png"
-            alt="speaker thumbnail"
-          />
-        </div>
-        <div class="speaker-info">
-          <h4 class="name">Artist Tirhas Tareke</h4>
-          <p class="job-title">Reknowned Tigria Singer.</p>
-          <p class="program-description">
-            Benkler studies commons-based peer production, and published his
-            seminal book The Wealth of Networks in 2006.
-          </p>
-        </div>
-      </div>
-      <div class="speaker">
-        <div class="thumbnail-image">
-          <img
-            class="black-white-pattern-bg"
-            src="./img/black-and-white-square-mat.png"
-            alt=""
-          />
-          <img
-            class="thumbnail"
-            src="./img/artist-niguse-abadi-pic.png"
-            alt="speaker thumbnail"
-          />
-        </div>
-        <div class="speaker-info">
-          <h4 class="name">Artist Nigussie Abadi</h4>
-          <p class="job-title">Reknowned Tigria Singer.</p>
-          <p class="program-description">
-            Benkler studies commons-based peer production, and published his
-            seminal book The Wealth of Networks in 2006.
-          </p>
-        </div>
-      </div>
-      <div class="speaker">
-        <div class="thumbnail-image">
-          <img
-            class="black-white-pattern-bg"
-            src="./img/black-and-white-square-mat.png"
-            alt=""
-          />
-          <img
-            class="thumbnail"
-            src="./img/artist-eden-gebreselassie-pic.png"
-            alt="speaker thumbnail"
-          />
-        </div>
-        <div class="speaker-info">
-          <h4 class="name">Artist Eden Gebreselassie</h4>
-          <p class="job-title">Reknowned Tigria Singer.</p>
-          <p class="program-description">
-            Benkler studies commons-based peer production, and published his
-            seminal book The Wealth of Networks in 2006.
-          </p>
-        </div>
-      </div>
-      <div class="speaker">
-        <div class="thumbnail-image">
-          <img
-            class="black-white-pattern-bg"
-            src="./img/black-and-white-square-mat.png"
-            alt=""
-          />
-          <img
-            class="thumbnail"
-            src="./img/artist-timnit-welday-pic.png"
-            alt="speaker thumbnail"
-          />
-        </div>
-        <div class="speaker-info">
-          <h4 class="name">Artist Timnit Welday</h4>
-          <p class="job-title">Reknowned Tigria Singer.</p>
-          <p class="program-description">
-            Benkler studies commons-based peer production, and published his
-            seminal book The Wealth of Networks in 2006.
-          </p>
+      <div class="container">
+        <h2 class="section-title">Featured Speakers</h2>
+        <hr class="section-title-underline" />
+        <div class="speaker-container">
+          <div class="speaker">
+            <div class="thumbnail-image">
+              <img
+                class="black-white-pattern-bg"
+                src="./img/black-and-white-square-mat.png"
+                alt=""
+              />
+              <img
+                class="thumbnail"
+                src="./img/president-sahle-work-zewdie.jpg"
+                alt="speaker thumbnail"
+              />
+            </div>
+            <div class="speaker-info">
+              <h4 class="name">H.E Sahle-Work Zewde</h4>
+              <p class="job-title">
+                President of Federal Democratic Republic of Ethiopia
+              </p>
+              <p class="program-description">
+                Benkler studies commons-based peer production, and published his
+                seminal book The Wealth of Networks in 2006.
+              </p>
+            </div>
+          </div>
+          <div class="speaker">
+            <div class="thumbnail-image">
+              <img
+                class="black-white-pattern-bg"
+                src="./img/black-and-white-square-mat.png"
+                alt=""
+              />
+              <img
+                class="thumbnail"
+                src="./img/artist-somon-bayre-pic.png"
+                alt="speaker thumbnail"
+              />
+            </div>
+            <div class="speaker-info">
+              <h4 class="name">Artist Solomon Bayre</h4>
+              <p class="job-title">Reknowned Tigria Singer.</p>
+              <p class="program-description">
+                Benkler studies commons-based peer production, and published his
+                seminal book The Wealth of Networks in 2006.
+              </p>
+            </div>
+          </div>
+          <div class="speaker">
+            <div class="thumbnail-image">
+              <img
+                class="black-white-pattern-bg"
+                src="./img/black-and-white-square-mat.png"
+                alt=""
+              />
+              <img
+                class="thumbnail"
+                src="./img/artist-tirhase-tareke-pic.png"
+                alt="speaker thumbnail"
+              />
+            </div>
+            <div class="speaker-info">
+              <h4 class="name">Artist Tirhas Tareke</h4>
+              <p class="job-title">Reknowned Tigria Singer.</p>
+              <p class="program-description">
+                Benkler studies commons-based peer production, and published his
+                seminal book The Wealth of Networks in 2006.
+              </p>
+            </div>
+          </div>
+          <div class="speaker">
+            <div class="thumbnail-image">
+              <img
+                class="black-white-pattern-bg"
+                src="./img/black-and-white-square-mat.png"
+                alt=""
+              />
+              <img
+                class="thumbnail"
+                src="./img/artist-niguse-abadi-pic.png"
+                alt="speaker thumbnail"
+              />
+            </div>
+            <div class="speaker-info">
+              <h4 class="name">Artist Nigussie Abadi</h4>
+              <p class="job-title">Reknowned Tigria Singer.</p>
+              <p class="program-description">
+                Benkler studies commons-based peer production, and published his
+                seminal book The Wealth of Networks in 2006.
+              </p>
+            </div>
+          </div>
+          <div class="speaker">
+            <div class="thumbnail-image">
+              <img
+                class="black-white-pattern-bg"
+                src="./img/black-and-white-square-mat.png"
+                alt=""
+              />
+              <img
+                class="thumbnail"
+                src="./img/artist-eden-gebreselassie-pic.png"
+                alt="speaker thumbnail"
+              />
+            </div>
+            <div class="speaker-info">
+              <h4 class="name">Artist Eden Gebreselassie</h4>
+              <p class="job-title">Reknowned Tigria Singer.</p>
+              <p class="program-description">
+                Benkler studies commons-based peer production, and published his
+                seminal book The Wealth of Networks in 2006.
+              </p>
+            </div>
+          </div>
+          <div class="speaker">
+            <div class="thumbnail-image">
+              <img
+                class="black-white-pattern-bg"
+                src="./img/black-and-white-square-mat.png"
+                alt=""
+              />
+              <img
+                class="thumbnail"
+                src="./img/artist-timnit-welday-pic.png"
+                alt="speaker thumbnail"
+              />
+            </div>
+            <div class="speaker-info">
+              <h4 class="name">Artist Timnit Welday</h4>
+              <p class="job-title">Reknowned Tigria Singer.</p>
+              <p class="program-description">
+                Benkler studies commons-based peer production, and published his
+                seminal book The Wealth of Networks in 2006.
+              </p>
+            </div>
+          </div>
         </div>
       </div>
     </section>
 
     <section class="partners">
-      <h2 class="section-title">Partner</h2>
-      <hr class="section-title-underline" />
-      <div class="sponsors">
-        <img
-          src="./img/wegagen-bank-new-logo.png"
-          alt="Logo of Wegagen Bank"
-          class="sponsor-logo"
-        />
-        <img
-          src="./img/cbe-logo.png"
-          alt="Logo of Commericial Bank of Ethiopia"
-          class="sponsor-logo"
-        />
-        <img
-          src="./img/ethiopian-airlines-logo.png"
-          alt="Logo of Ethiopian Airlines"
-          class="sponsor-logo"
-        />
-        <img
-          src="./img/cbe-logo.png"
-          alt="Logo of Commericial Bank of Ethiopia"
-          class="sponsor-logo"
-        />
-        <img
-          src="./img/ethiopian-airlines-logo.png"
-          alt="Logo of Ethiopian Airlines"
-          class="sponsor-logo"
-        />
+      <div class="container">
+        <h2 class="section-title">Partner</h2>
+        <hr class="section-title-underline" />
+        <div class="sponsors">
+          <img
+            src="./img/wegagen-bank-new-logo.png"
+            alt="Logo of Wegagen Bank"
+            class="sponsor-logo"
+          />
+          <img
+            src="./img/cbe-logo.png"
+            alt="Logo of Commericial Bank of Ethiopia"
+            class="sponsor-logo"
+          />
+          <img
+            src="./img/ethiopian-airlines-logo.png"
+            alt="Logo of Ethiopian Airlines"
+            class="sponsor-logo"
+          />
+          <img
+            src="./img/cbe-logo.png"
+            alt="Logo of Commericial Bank of Ethiopia"
+            class="sponsor-logo"
+          />
+          <img
+            src="./img/ethiopian-airlines-logo.png"
+            alt="Logo of Ethiopian Airlines"
+            class="sponsor-logo"
+          />
+        </div>
       </div>
     </section>
 
     <footer class="footer">
-      <div class="ashenda-logo-footer">
-        <img src="./img/ashenda-icon.png" alt="Ashenda icon" />
-        <p>Ashenda</p>
-      </div>
-      <div class="copy-right">
-        <p class="copy-right-text">
-          2022 Ashenda Tigrai Festival <br />
-          All rights reserved
-        </p>
+      <div class="container">
+        <div class="ashenda-logo-footer">
+          <img src="./img/ashenda-icon.png" alt="Ashenda icon" />
+          <p>Ashenda</p>
+        </div>
+        <div class="copy-right">
+          <p class="copy-right-text">
+            2022 Ashenda Tigrai Festival <br />
+            All rights reserved
+          </p>
+        </div>
       </div>
     </footer>
     <script src="./js/main.js"></script>

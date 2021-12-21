@@ -19,6 +19,21 @@ img {
   max-width: 100%;
 }
 
+a {
+  color: #272a31;
+  font-weight: 700;
+  padding: 6px;
+  min-width: 24px;
+}
+
+a:active {
+  color: #ec5242;
+}
+
+a:hover {
+  outline: 1px dotted #ec5242;
+}
+
 .container {
   max-width: 94%;
   margin: 0 auto;
@@ -40,7 +55,8 @@ img {
 
 .header .logo,
 .nav-list,
-.mobile-nav-menu {
+.mobile-nav-menu,
+.btn-compain {
   display: none;
 }
 
@@ -155,12 +171,13 @@ img {
   background-image: url('../img/main-section-desktop-background-init.png');
   background-size: contain;
   background-repeat: repeat;
+  text-align: center;
 }
 
 .main .container {
   flex-direction: column;
   align-items: center;
-  padding: 32px 0;
+  padding: 42px 0;
 }
 
 .main .section-title {
@@ -179,29 +196,45 @@ img {
 
 .main .program {
   display: flex;
-  margin: 12px 16px;
-  padding: 12px;
+  flex-direction: row;
   justify-content: space-between;
   align-items: center;
+  margin: 12px 16px;
+  padding: 12px;
   width: calc(100% - 24px);
   background-color: rgba(211, 211, 211, 0.1);
 }
 
+.main .program:hover {
+  outline: 2px solid #fff;
+}
+
+.main .program-icon {
+  flex: 1;
+  text-align: left;
+}
+
 .main .program-title {
+  flex: 2;
   color: #ec5242;
   width: 20%;
   font-size: 20px;
   font-weight: 700;
   text-transform: capitalize;
+  margin-top: 12px;
+  text-align: left;
 }
 
 .main .program-description {
+  flex: 4;
   color: #fff;
   line-height: 24px;
-  width: 60%;
+  text-align: left;
+  margin: 12px 0;
 }
 
 .main .btn-join-ashenda-2022 {
+  display: block;
   background-color: #ec5242;
   color: #fff;
   font-size: 24px;
@@ -238,10 +271,13 @@ img {
 }
 
 .featured-speakers {
+  padding: 24px 0;
+}
+
+.featured-speakers .container {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  padding: 24px 0;
 }
 
 .featured-speakers .section-title {
@@ -345,11 +381,14 @@ img {
 }
 
 .partners {
+  background-color: #272a31;
+  padding: 48px 24px;
+}
+
+.partners .container {
   display: flex;
   flex-direction: column;
   align-items: center;
-  background-color: #272a31;
-  padding: 48px 24px;
 }
 
 .partners .section-title {
@@ -359,9 +398,10 @@ img {
 .partners .sponsors {
   display: flex;
   align-items: center;
-  justify-content: flex-start;
+  justify-content: space-evenly;
   flex-wrap: wrap;
   width: 100%;
+  padding-top: 24px;
 }
 
 .partners .sponsor-logo {
@@ -371,13 +411,152 @@ img {
 }
 
 .footer {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
   margin: 12px 16px;
   padding: 36px;
 }
 
+.footer .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
 .footer .copy-right {
   width: 60%;
+}
+
+@media screen and (min-width: 768px) {
+  .container {
+    max-width: 85%;
+  }
+
+  .header .nav-bar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    padding: 0;
+  }
+
+  .header .logo,
+  .nav-menu,
+  .btn-compain {
+    display: block;
+  }
+
+  .header .logo {
+    min-width: 185px;
+  }
+
+  .header .logo .secondary-logo-text {
+    letter-spacing: 3px;
+  }
+
+  .header .nav-menu {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .header .logo .logo-link {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    color: #272a31;
+    font-weight: 600;
+    text-transform: capitalize;
+    text-decoration: none;
+  }
+
+  .logo .logo-text-container {
+    margin-left: 16px;
+    color: #272a31;
+    font-size: 20px;
+  }
+
+  .logo .primary-logo-text {
+    font-size: 24px;
+    font-weight: 700;
+  }
+
+  .header .nav-menu a {
+    text-decoration: none;
+    margin-right: 16px;
+  }
+
+  .header .btn-mobile-menu {
+    display: none;
+  }
+
+  .header .nav-menu .nav-list {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    list-style: none;
+  }
+
+  .header .nav-menu .nav-list .nav-link a {
+    margin-right: 6px;
+  }
+
+  .header .nav-menu .btn-compain {
+    padding: 8px;
+    color: #ec5242;
+    font-size: 18px;
+    font-weight: 700;
+    border: 3px solid #ec5242;
+    align-self: flex-end;
+    margin-left: 24px;
+  }
+
+  .header .hero .short-description {
+    max-width: 60%;
+  }
+
+  .main .program-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: stretch;
+    flex-wrap: wrap;
+    width: 100%;
+    padding: 32px 0;
+  }
+
+  .main .program {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    flex: 1;
+    background-color: rgba(211, 211, 211, 0.1);
+    margin: 12px 2px;
+    padding: 12px;
+    vertical-align: top;
+  }
+
+  .main .program-icon {
+    flex: 1;
+  }
+
+  .main .program-title {
+    text-align: center;
+    flex: 1;
+    width: 100%;
+  }
+
+  .main .program-description {
+    text-align: center;
+    flex: 1;
+    width: 100%;
+  }
+
+  .main .btn-join-ashenda-2022 {
+    display: none;
+  }
+
+  .main .see-whole-program-link {
+    color: #fff;
+    text-transform: uppercase;
+    font-weight: 500;
+  }
 }
