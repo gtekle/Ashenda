@@ -129,10 +129,15 @@ a:hover {
 }
 
 .header .event-title {
+  background-image: url('../img/artist-eden-gebreselassie-pic.png');
+  background-size: contain;
   color: #ec5242;
   font-size: 48px;
   font-weight: 700;
   text-transform: uppercase;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
 }
 
 .header .short-description {
