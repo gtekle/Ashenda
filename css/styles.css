@@ -429,6 +429,8 @@ a:hover {
   flex-direction: column;
   flex-wrap: wrap;
   align-items: center;
+  padding-left: 5%;
+  padding-right: 5%;
 }
 
 .partners .section-title {
@@ -438,7 +440,7 @@ a:hover {
 .partners .sponsors {
   display: flex;
   align-items: center;
-  justify-content: space-evenly;
+  justify-content: space-between;
   flex-wrap: wrap;
   width: 100%;
   padding-top: 24px;
@@ -478,11 +480,15 @@ a:hover {
     padding: 0;
   }
 
+  .header .container {
+    padding: 60px 7.5%;
+  }
+
   .header .nav-bar {
     justify-content: space-between;
     align-items: center;
     width: 100%;
-    padding: 0 7.5%;
+    padding: 0 12.5%;
     margin-top: 0;
     background-color: #fff;
     -moz-box-shadow: 2px 2px 4px #d3d3d3;
@@ -580,6 +586,20 @@ a:hover {
     margin-bottom: 16px;
   }
 
+  .about {
+    min-height: auto;
+    border-bottom: 1px solid #d3d3d3;
+  }
+
+  .about .container {
+    padding-bottom: 0;
+  }
+
+  .header .about-hero {
+    padding-top: 36px;
+    margin-top: 24px;
+  }
+
   .header .about-hero .about-event-title {
     font-size: 48px;
     line-height: 48px;
@@ -593,6 +613,11 @@ a:hover {
   .header .event-title {
     font-size: 60px;
     line-height: 60px;
+  }
+
+  .main .container {
+    padding-left: 5%;
+    padding-right: 5%;
   }
 
   .main .program-container {
@@ -657,6 +682,11 @@ a:hover {
     margin: 24px 0;
   }
 
+  .featured-speakers .container {
+    padding-left: 5%;
+    padding-right: 5%;
+  }
+
   .featured-speakers .speaker-container {
     display: flex;
     flex-direction: row;
@@ -703,7 +733,22 @@ a:hover {
   }
 
   .footer {
+    background-color: #fff;
+    color: #272a31;
+  }
+
+  .footer .container {
+    padding-left: 5%;
+    padding-right: 5%;
+  }
+
+  .footer .ashenda-logo-footer p {
+    display: inline-block;
+  }
+
+  .about-footer {
     background-color: #272a31;
+    margin-left: 0;
     color: #fff;
   }
 
