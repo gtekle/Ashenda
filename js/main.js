@@ -6,7 +6,7 @@ const body = document.querySelector('body');
 
 btnMenuOpen.addEventListener('click', (event) => {
   event.preventDefault();
-  mobileNavMenu.style.display = 'block';
+  mobileNavMenu.style.display = 'flex';
   body.style.overflow = 'hidden';
 });
 
