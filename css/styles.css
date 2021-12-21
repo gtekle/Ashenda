@@ -388,6 +388,7 @@ a:hover {
 .partners .container {
   display: flex;
   flex-direction: column;
+  flex-wrap: wrap;
   align-items: center;
 }
 
@@ -430,12 +431,21 @@ a:hover {
     max-width: 85%;
   }
 
+  .header {
+    padding: 0;
+  }
+
   .header .nav-bar {
     display: flex;
     justify-content: space-between;
     align-items: center;
     width: 100%;
-    padding: 0;
+    padding: 0 7.5%;
+    margin-top: 0;
+    background-color: #fff;
+    -moz-box-shadow: 2px 2px 4px #d3d3d3;
+    -webkit-box-shadow: 2px 2px 4px #d3d3d3;
+    box-shadow: 2px 2px 4px #d3d3d3;
   }
 
   .header .logo,
@@ -501,6 +511,7 @@ a:hover {
   .header .nav-menu .btn-compain {
     padding: 8px;
     color: #ec5242;
+    background-color: #fff;
     font-size: 18px;
     font-weight: 700;
     border: 3px solid #ec5242;
@@ -510,6 +521,12 @@ a:hover {
 
   .header .hero .short-description {
     max-width: 60%;
+    margin-bottom: 16px;
+  }
+
+  .header .event-title {
+    font-size: 66px;
+    line-height: 66px;
   }
 
   .main .program-container {
