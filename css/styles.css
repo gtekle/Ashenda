@@ -316,7 +316,7 @@ a:hover {
 }
 
 .featured-speakers {
-  padding: 24px 0;
+  padding: 12px 0;
 }
 
 .featured-speakers .container {
@@ -344,7 +344,7 @@ a:hover {
 .featured-speakers .speaker {
   display: flex;
   justify-content: space-between;
-  align-items: center;
+  align-items: flex-start;
   margin: 12px;
   padding: 12px;
   width: calc(100% - 24px);
@@ -369,8 +369,7 @@ a:hover {
 }
 
 .featured-speakers .speaker .thumbnail {
-  max-height: 150px;
-  max-width: 125px;
+  width: 100%;
   position: relative;
   margin-top: 20px;
   margin-left: 20px;
