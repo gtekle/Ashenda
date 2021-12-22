@@ -572,9 +572,16 @@ a:hover {
   .header .social-media-links a {
     text-decoration: none;
     color: #fff;
-    font-weight: 400;
+    font-weight: 500;
     font-size: 12px;
     margin-right: 16px;
+  }
+
+  .header .social-media-links span + span {
+    color: #fff;
+    font-weight: 500;
+    font-size: 12px;
+    margin-left: 16px;
   }
 
   .header .logo,
