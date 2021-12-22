@@ -1,3 +1,5 @@
+const NUMBER_OF_SPEAKERS_ON_LOAD = 2;
+
 const mobileNavMenu = document.querySelector('.mobile-nav-menu');
 const btnMenuOpen = document.querySelector('.btn-mobile-menu');
 const btnMenuClose = document.querySelector('.btn-menu-close');
@@ -76,10 +78,11 @@ const speakers = [
 
 const featuredSpeakersContainer = document.querySelector('.speaker-container');
 
-speakers.forEach((speaker) => {
-  const speakerHTML = document.createElement('div');
-  speakerHTML.className = 'speaker';
-  speakerHTML.innerHTML = `<div class="thumbnail-image">
+function generateSpeakers(from, to) {
+  for (let i = from; i < to; i++) {
+    const speakerHTML = document.createElement('div');
+    speakerHTML.className = 'speaker';
+    speakerHTML.innerHTML = `<div class="thumbnail-image">
               <img
                 class="black-white-pattern-bg"
                 src="./img/black-and-white-square-mat.png"
@@ -92,16 +95,65 @@ speakers.forEach((speaker) => {
               />
               <img
                 class="thumbnail"
-                src=${speaker.thumbnailImage}
-                alt="${speaker.title} ${speaker.fullName} photo"
+                src=${speakers[i].thumbnailImage}
+                alt="${speakers[i].title} ${speakers[i].fullName} photo"
               />
             </div>
             <div class="speaker-info">
-              <h4 class="name">${speaker.title} ${speaker.fullName}</h4>
-              <p class="job-title">${speaker.currentJob}</p>
+              <h4 class="name">${speakers[i].title} ${speakers[i].fullName}</h4>
+              <p class="job-title">${speakers[i].currentJob}</p>
               <p class="program-description">
-                ${speaker.introduction}
+                ${speakers[i].introduction}
               </p>
             </div>`;
-  featuredSpeakersContainer.appendChild(speakerHTML);
+    featuredSpeakersContainer.appendChild(speakerHTML);
+  }
+}
+
+const btnMore = document.querySelector('.btn-more');
+const partners = document.querySelector('#index-partners');
+const footer = document.querySelector('#index-footer');
+
+function isScreenSmall() {
+  if (window.screen.width < 768) {
+    return true;
+  }
+  return false;
+}
+
+window.addEventListener('resize', () => {
+  if (isScreenSmall()) {
+    btnMore.style.display = 'block';
+    featuredSpeakersContainer.innerHTML = '';
+    generateSpeakers(0, NUMBER_OF_SPEAKERS_ON_LOAD);
+  } else {
+    btnMore.style.display = 'none';
+    featuredSpeakersContainer.innerHTML = '';
+    generateSpeakers(0, speakers.length);
+  }
+});
+
+window.addEventListener('load', () => {
+  if (isScreenSmall()) {
+    btnMore.style.display = 'block';
+    featuredSpeakersContainer.innerHTML = '';
+    generateSpeakers(0, NUMBER_OF_SPEAKERS_ON_LOAD);
+  } else {
+    btnMore.style.display = 'none';
+    featuredSpeakersContainer.innerHTML = '';
+    generateSpeakers(0, speakers.length);
+  }
+});
+
+btnMore.addEventListener('click', () => {
+  if (!btnMore.classList.contains('less')) {
+    btnMore.classList.add('less');
+    btnMore.innerHTML = `Less <i class="fas fa-angle-up"></i>`;
+    generateSpeakers(NUMBER_OF_SPEAKERS_ON_LOAD, speakers.length);
+  } else {
+    btnMore.classList.remove('less');
+    btnMore.innerHTML = `More<i class="fas fa-angle-down"></i>`;
+    featuredSpeakersContainer.innerHTML = '';
+    generateSpeakers(0, NUMBER_OF_SPEAKERS_ON_LOAD);
+  }
 });

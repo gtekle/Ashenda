@@ -381,6 +381,34 @@ a:hover {
   margin: 14px 0;
 }
 
+.featured-speakers .show-more-container {
+  display: block;
+  width: 100%;
+  padding: 0 16px;
+}
+
+.featured-speakers .show-more-container .btn-more {
+  width: 100%;
+  padding: 12px;
+  font-size: 16px;
+  font-weight: 700;
+  color: #272a31;
+  background-color: #fff;
+  border: 1px solid #d3d3d3;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.featured-speakers .btn-more .fa-angle-down,
+.fa-angle-up {
+  color: #ec5242;
+  padding: 0;
+  margin: 0;
+  font-size: 24px;
+  font-weight: 700;
+  margin-left: 6px;
+}
+
 .previous-ashenda-festivals .container {
   display: flex;
   flex-direction: column;
@@ -715,6 +743,10 @@ a:hover {
   }
 
   .featured-speakers .speaker .thumbnail-image .black-white-pattern-bg {
+    display: none;
+  }
+
+  .featured-speakers .show-more-container {
     display: none;
   }
 
