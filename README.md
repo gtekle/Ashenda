@@ -43,7 +43,7 @@ Give a ⭐️ if you like this project!
 ## Acknowledgments
 
 - Microverse Inc
-- [Creative Commons license of the design](https://creativecommons.org/licenses/by-nc/4.0/)
+- [Original design idea by Cindy Shin in Behance](https://www.behance.net/adagio07)
 
 ## 📝 License
 
