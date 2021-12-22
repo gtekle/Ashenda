@@ -80,6 +80,10 @@ a:hover {
   display: none;
 }
 
+.header .social-media-links {
+  display: none;
+}
+
 .header .nav-menu .nav-list {
   display: none;
 }
@@ -526,7 +530,7 @@ a:hover {
     align-items: center;
     width: 100%;
     padding: 0 12.5%;
-    margin-top: 0;
+    margin-top: 22px;
     background-color: #fff;
     -moz-box-shadow: 2px 2px 4px #d3d3d3;
     -webkit-box-shadow: 2px 2px 4px #d3d3d3;
@@ -541,6 +545,30 @@ a:hover {
   .header .logo,
   .btn-compain {
     display: block;
+  }
+
+  .header .social-media-links {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    height: 22px;
+    color: #fff;
+    font-weight: 400;
+    font-size: 12px;
+    background-color: #272a31;
+    width: 100%;
+    padding: 6px 12.5%;
+    z-index: 10;
+  }
+
+  .header .social-media-links a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: 400;
+    font-size: 12px;
+    margin-right: 16px;
   }
 
   .header .logo,
