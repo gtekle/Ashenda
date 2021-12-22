@@ -39,6 +39,10 @@ a:hover {
   outline: 1px dotted #ec5242;
 }
 
+.active {
+  color: #ec5242;
+}
+
 .container {
   max-width: 94%;
   margin: 0 auto;
@@ -46,6 +50,9 @@ a:hover {
 }
 
 .header {
+  background-image: url('../img/header-shapes-mobile.png');
+  background-size: cover;
+  background-repeat: no-repeat;
   width: 100%;
   min-height: 100vh;
   padding: 24px 0;
@@ -170,6 +177,7 @@ a:hover {
 
 .header .short-description {
   border: 2px solid #fff;
+  background-color: #e3e3e3;
   color: #272a31;
   line-height: 24px;
   padding: 20px 12px;
@@ -308,7 +316,7 @@ a:hover {
 }
 
 .featured-speakers {
-  padding: 24px 0;
+  padding: 12px 0;
 }
 
 .featured-speakers .container {
@@ -336,7 +344,7 @@ a:hover {
 .featured-speakers .speaker {
   display: flex;
   justify-content: space-between;
-  align-items: center;
+  align-items: flex-start;
   margin: 12px;
   padding: 12px;
   width: calc(100% - 24px);
@@ -361,8 +369,7 @@ a:hover {
 }
 
 .featured-speakers .speaker .thumbnail {
-  max-height: 150px;
-  max-width: 125px;
+  width: 100%;
   position: relative;
   margin-top: 20px;
   margin-left: 20px;
