@@ -241,8 +241,8 @@ a:hover {
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
-  margin: 12px 16px;
-  padding: 12px;
+  margin: 12px 12px;
+  padding: 0 6px;
   width: calc(100% - 24px);
   background-color: rgba(211, 211, 211, 0.1);
 }
@@ -263,19 +263,20 @@ a:hover {
   flex: 2;
   color: #ec5242;
   width: 20%;
-  font-size: 20px;
+  font-size: 14px;
   font-weight: 700;
   text-transform: capitalize;
   margin-top: 12px;
-  text-align: left;
+  text-align: center;
 }
 
 .main .program-description {
   flex: 4;
   color: #fff;
+  font-size: 13px;
   line-height: 24px;
   text-align: left;
-  margin: 12px 0;
+  margin: 12px 6px;
 }
 
 .main .btn-join-ashenda-2022 {
@@ -333,7 +334,7 @@ a:hover {
 }
 
 .featured-speakers .section-title-underline {
-  width: 50px;
+  width: 30px;
   font-size: 2px;
   margin: 16px 0;
   margin-left: calc(50% - 25px);
@@ -675,7 +676,7 @@ a:hover {
     flex: 1;
     background-color: rgba(211, 211, 211, 0.1);
     margin: 12px 2px;
-    padding: 12px;
+    padding: 12px 6px;
     vertical-align: top;
   }
 
@@ -686,6 +687,7 @@ a:hover {
   .main .program-title {
     text-align: center;
     flex: 1;
+    font-size: 20px;
     width: 100%;
   }
 
