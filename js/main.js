@@ -85,12 +85,12 @@ function generateSpeakers(from, to) {
               <img
                 class="black-white-pattern-bg"
                 src="./img/black-and-white-square-mat.png"
-                alt=""
+                alt="black and white squared back shade"
               />
               <img
                 class="black-white-pattern-bg-blur"
                 src="./img/black-and-white-square-mat-blur.png"
-                alt=""
+                alt="black and white squared back shade"
               />
               <img
                 class="thumbnail"
@@ -101,7 +101,7 @@ function generateSpeakers(from, to) {
             <div class="speaker-info">
               <h4 class="name">${speakers[i].title} ${speakers[i].fullName}</h4>
               <p class="job-title">${speakers[i].currentJob}</p>
-              <p class="program-description">
+              <p class="introduction">
                 ${speakers[i].introduction}
               </p>
             </div>`;

@@ -80,6 +80,10 @@ a:hover {
   display: none;
 }
 
+.header .social-media-links {
+  display: none;
+}
+
 .header .nav-menu .nav-list {
   display: none;
 }
@@ -241,8 +245,8 @@ a:hover {
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
-  margin: 12px 16px;
-  padding: 12px;
+  margin: 12px 12px;
+  padding: 0 6px;
   width: calc(100% - 24px);
   background-color: rgba(211, 211, 211, 0.1);
 }
@@ -263,19 +267,20 @@ a:hover {
   flex: 2;
   color: #ec5242;
   width: 20%;
-  font-size: 20px;
+  font-size: 14px;
   font-weight: 700;
   text-transform: capitalize;
   margin-top: 12px;
-  text-align: left;
+  text-align: center;
 }
 
 .main .program-description {
   flex: 4;
   color: #fff;
+  font-size: 13px;
   line-height: 24px;
   text-align: left;
-  margin: 12px 0;
+  margin: 12px 6px;
 }
 
 .main .btn-join-ashenda-2022 {
@@ -294,7 +299,6 @@ a:hover {
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin: 12px 16px;
   padding: 12px 24px;
 }
 
@@ -334,7 +338,7 @@ a:hover {
 }
 
 .featured-speakers .section-title-underline {
-  width: 50px;
+  width: 30px;
   font-size: 2px;
   margin: 16px 0;
   margin-left: calc(50% - 25px);
@@ -384,7 +388,13 @@ a:hover {
 .featured-speakers .speaker .speaker-info .job-title {
   color: #ec5242;
   font-weight: 600;
+  font-size: 14px;
   margin: 14px 0;
+}
+
+.featured-speakers .speaker .introduction {
+  font-size: 14px;
+  text-align: justify;
 }
 
 .featured-speakers .show-more-container {
@@ -526,7 +536,7 @@ a:hover {
     align-items: center;
     width: 100%;
     padding: 0 12.5%;
-    margin-top: 0;
+    margin-top: 22px;
     background-color: #fff;
     -moz-box-shadow: 2px 2px 4px #d3d3d3;
     -webkit-box-shadow: 2px 2px 4px #d3d3d3;
@@ -541,6 +551,37 @@ a:hover {
   .header .logo,
   .btn-compain {
     display: block;
+  }
+
+  .header .social-media-links {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    height: 22px;
+    color: #fff;
+    font-weight: 400;
+    font-size: 12px;
+    background-color: #272a31;
+    width: 100%;
+    padding: 6px 12.5%;
+    z-index: 10;
+  }
+
+  .header .social-media-links a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: 500;
+    font-size: 12px;
+    margin-right: 16px;
+  }
+
+  .header .social-media-links span + span {
+    color: #fff;
+    font-weight: 500;
+    font-size: 12px;
+    margin-left: 16px;
   }
 
   .header .logo,
@@ -676,7 +717,7 @@ a:hover {
     flex: 1;
     background-color: rgba(211, 211, 211, 0.1);
     margin: 12px 2px;
-    padding: 12px;
+    padding: 12px 6px;
     vertical-align: top;
   }
 
@@ -687,6 +728,7 @@ a:hover {
   .main .program-title {
     text-align: center;
     flex: 1;
+    font-size: 20px;
     width: 100%;
   }
 
