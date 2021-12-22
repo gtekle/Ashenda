@@ -162,7 +162,6 @@ a:hover {
   font-weight: 700;
   font-family: cocogoose, sans-serif;
   text-transform: uppercase;
-  background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
