@@ -8,7 +8,7 @@
 
 @font-face {
   font-family: cocogoose;
-  src: url('../fonts/cocogoose/Cocogoose\Pro-trial.ttf');
+  src: url('../fonts/cocogoose/Cocogoose/cocogoose-pro-regular.ttf');
 }
 
 html {
@@ -153,18 +153,17 @@ a:hover {
   color: #ec5242;
   font-size: 36px;
   font-weight: 700;
-  font-family: cocogoose;
+  font-family: cocogoose, sans-serif;
   text-transform: uppercase;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-  background-clip: text;
 }
 
 .header .about-hero .about-event-title {
   color: #ec5242;
   font-size: 36px;
   font-weight: 700;
-  font-family: cocogoose;
+  font-family: cocogoose, sans-serif;
   text-transform: uppercase;
   text-align: justify;
 }
@@ -194,7 +193,7 @@ a:hover {
   color: #272a31;
   font-size: 26px;
   font-weight: 700;
-  font-family: cocogoose;
+  font-family: cocogoose, sans-serif;
 }
 
 .header .event-place {
@@ -537,10 +536,6 @@ a:hover {
     display: block;
   }
 
-  .header .nav-menu .nav-list {
-    display: flex;
-  }
-
   .header .logo,
   .nav-menu,
   .btn-compain {
@@ -647,7 +642,7 @@ a:hover {
   }
 
   .header .event-date {
-    font-family: cocogoose;
+    font-family: cocogoose, sans-serif;
     font-size: 48px;
   }
 
