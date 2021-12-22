@@ -247,6 +247,9 @@ a:hover {
 .main .program-icon {
   flex: 1;
   text-align: left;
+  max-width: 50px;
+  max-height: 50px;
+  margin-right: 12px;
 }
 
 .main .program-title {
