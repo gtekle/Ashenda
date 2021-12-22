@@ -6,6 +6,11 @@
   margin: 0;
 }
 
+@font-face {
+  font-family: cocogoose;
+  src: url('../fonts/cocogoose/Cocogoose/cocogoose-pro-regular.ttf');
+}
+
 html {
   font-size: 16px;
 }
@@ -17,6 +22,21 @@ body {
 
 img {
   max-width: 100%;
+}
+
+a {
+  color: #272a31;
+  font-weight: 700;
+  padding: 6px;
+  min-width: 24px;
+}
+
+a:active {
+  color: #ec5242;
+}
+
+a:hover {
+  outline: 1px dotted #ec5242;
 }
 
 .container {
@@ -38,28 +58,43 @@ img {
   padding: 0 16px;
 }
 
+.header .nav-bar {
+  display: flex;
+  position: fixed;
+  background-color: rgba(255, 255, 255, 0.2);
+  margin-left: 0;
+  top: 0;
+  z-index: 10;
+  width: 100%;
+}
+
 .header .logo,
-.nav-list,
-.mobile-nav-menu {
+.btn-compain {
+  display: none;
+}
+
+.header .nav-menu .nav-list {
   display: none;
 }
 
 .header .nav-menu .btn-mobile-menu {
   color: #272a31;
   font-size: 36px;
+  margin-left: 20px;
   font-weight: bold;
+  z-index: 11;
 }
 
 .header .mobile-nav-menu {
   display: none;
   position: absolute;
   top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
+  width: 100vw;
+  height: 100vh;
+  margin-left: 0;
   background-color: rgba(236, 82, 66, 0.75);
   backdrop-filter: blur(5px);
-  z-index: 30;
+  z-index: 300;
 }
 
 .mobile-nav-menu .btn-menu-close {
@@ -113,10 +148,24 @@ img {
 }
 
 .header .event-title {
+  background-image: url('../img/artist-eden-gebreselassie-pic.png');
+  background-size: contain;
   color: #ec5242;
-  font-size: 48px;
+  font-size: 36px;
   font-weight: 700;
+  font-family: cocogoose, sans-serif;
   text-transform: uppercase;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.header .about-hero .about-event-title {
+  color: #ec5242;
+  font-size: 36px;
+  font-weight: 700;
+  font-family: cocogoose, sans-serif;
+  text-transform: uppercase;
+  text-align: justify;
 }
 
 .header .short-description {
@@ -144,6 +193,7 @@ img {
   color: #272a31;
   font-size: 26px;
   font-weight: 700;
+  font-family: cocogoose, sans-serif;
 }
 
 .header .event-place {
@@ -155,12 +205,13 @@ img {
   background-image: url('../img/main-section-desktop-background-init.png');
   background-size: contain;
   background-repeat: repeat;
+  text-align: center;
 }
 
 .main .container {
   flex-direction: column;
   align-items: center;
-  padding: 32px 0;
+  padding: 42px 0;
 }
 
 .main .section-title {
@@ -171,7 +222,7 @@ img {
 }
 
 .section-title-underline {
-  width: 50px;
+  width: 30px;
   font-size: 2px;
   margin: 16px 0;
   border: 1px solid#ec5242;
@@ -179,29 +230,48 @@ img {
 
 .main .program {
   display: flex;
-  margin: 12px 16px;
-  padding: 12px;
+  flex-direction: row;
   justify-content: space-between;
   align-items: center;
+  margin: 12px 16px;
+  padding: 12px;
   width: calc(100% - 24px);
   background-color: rgba(211, 211, 211, 0.1);
 }
 
+.main .program:hover {
+  outline: 2px solid #fff;
+}
+
+.main .program-icon {
+  flex: 1;
+  text-align: left;
+  max-width: 50px;
+  max-height: 50px;
+  margin-right: 12px;
+}
+
 .main .program-title {
+  flex: 2;
   color: #ec5242;
   width: 20%;
   font-size: 20px;
   font-weight: 700;
   text-transform: capitalize;
+  margin-top: 12px;
+  text-align: left;
 }
 
 .main .program-description {
+  flex: 4;
   color: #fff;
   line-height: 24px;
-  width: 60%;
+  text-align: left;
+  margin: 12px 0;
 }
 
 .main .btn-join-ashenda-2022 {
+  display: block;
   background-color: #ec5242;
   color: #fff;
   font-size: 24px;
@@ -238,10 +308,13 @@ img {
 }
 
 .featured-speakers {
+  padding: 24px 0;
+}
+
+.featured-speakers .container {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  padding: 24px 0;
 }
 
 .featured-speakers .section-title {
@@ -283,6 +356,10 @@ img {
   top: 0;
 }
 
+.featured-speakers .speaker .thumbnail-image .black-white-pattern-bg-blur {
+  display: none;
+}
+
 .featured-speakers .speaker .thumbnail {
   max-height: 150px;
   max-width: 125px;
@@ -301,6 +378,34 @@ img {
   color: #ec5242;
   font-weight: 600;
   margin: 14px 0;
+}
+
+.featured-speakers .show-more-container {
+  display: block;
+  width: 100%;
+  padding: 0 16px;
+}
+
+.featured-speakers .show-more-container .btn-more {
+  width: 100%;
+  padding: 12px;
+  font-size: 16px;
+  font-weight: 700;
+  color: #272a31;
+  background-color: #fff;
+  border: 1px solid #d3d3d3;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.featured-speakers .btn-more .fa-angle-down,
+.fa-angle-up {
+  color: #ec5242;
+  padding: 0;
+  margin: 0;
+  font-size: 24px;
+  font-weight: 700;
+  margin-left: 6px;
 }
 
 .previous-ashenda-festivals .container {
@@ -345,11 +450,17 @@ img {
 }
 
 .partners {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
   background-color: #272a31;
   padding: 48px 24px;
+}
+
+.partners .container {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-items: center;
+  padding-left: 5%;
+  padding-right: 5%;
 }
 
 .partners .section-title {
@@ -359,9 +470,10 @@ img {
 .partners .sponsors {
   display: flex;
   align-items: center;
-  justify-content: flex-start;
+  justify-content: space-between;
   flex-wrap: wrap;
   width: 100%;
+  padding-top: 24px;
 }
 
 .partners .sponsor-logo {
@@ -370,14 +482,321 @@ img {
   margin-right: 16px;
 }
 
+.about-partners {
+  display: block;
+}
+
 .footer {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
   margin: 12px 16px;
   padding: 36px;
 }
 
+.footer .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
 .footer .copy-right {
   width: 60%;
+}
+
+@media screen and (min-width: 768px) {
+  .container {
+    max-width: 85%;
+  }
+
+  .header {
+    padding: 0;
+  }
+
+  .header .container {
+    padding: 60px 7.5%;
+  }
+
+  .header .nav-bar {
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    padding: 0 12.5%;
+    margin-top: 0;
+    background-color: #fff;
+    -moz-box-shadow: 2px 2px 4px #d3d3d3;
+    -webkit-box-shadow: 2px 2px 4px #d3d3d3;
+    box-shadow: 2px 2px 4px #d3d3d3;
+  }
+
+  .about .nav-bar {
+    padding-left: 20%;
+    margin-bottom: 12px;
+  }
+
+  .header .logo,
+  .btn-compain {
+    display: block;
+  }
+
+  .header .logo,
+  .nav-menu,
+  .btn-compain {
+    display: block;
+  }
+
+  .header .logo {
+    min-width: 185px;
+  }
+
+  .header .logo .secondary-logo-text {
+    letter-spacing: 3px;
+  }
+
+  .header .nav-menu {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .header .logo .logo-link {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    color: #272a31;
+    font-weight: 600;
+    text-transform: capitalize;
+    text-decoration: none;
+  }
+
+  .logo .logo-text-container {
+    margin-left: 16px;
+    color: #272a31;
+    font-size: 20px;
+  }
+
+  .logo .primary-logo-text {
+    font-size: 24px;
+    font-weight: 700;
+  }
+
+  .header .nav-menu a {
+    text-decoration: none;
+    margin-right: 16px;
+  }
+
+  .header .nav-menu .btn-mobile-menu {
+    display: none;
+  }
+
+  .header .nav-menu .nav-list {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    list-style: none;
+  }
+
+  .header .nav-menu .nav-list .nav-link a {
+    margin-right: 6px;
+  }
+
+  .header .nav-menu .btn-compain {
+    padding: 8px;
+    color: #ec5242;
+    background-color: #fff;
+    font-size: 18px;
+    font-weight: 700;
+    border: 3px solid #ec5242;
+    align-self: flex-end;
+    margin-left: 24px;
+  }
+
+  .header .hero .short-description {
+    max-width: 60%;
+    margin-bottom: 16px;
+  }
+
+  .about {
+    min-height: auto;
+    border-bottom: 1px solid #d3d3d3;
+  }
+
+  .about .container {
+    padding-bottom: 0;
+  }
+
+  .header .about-hero {
+    padding-top: 36px;
+    margin-top: 24px;
+  }
+
+  .header .about-hero .about-event-title {
+    font-size: 48px;
+    line-height: 48px;
+  }
+
+  .header .about-hero .short-description {
+    outline: 1px solid #d3d3d3;
+    max-width: 70%;
+  }
+
+  .header .event-title {
+    font-size: 56px;
+    line-height: 56px;
+  }
+
+  .header .event-date {
+    font-family: cocogoose, sans-serif;
+    font-size: 48px;
+  }
+
+  .main .container {
+    padding-left: 5%;
+    padding-right: 5%;
+  }
+
+  .main .program-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: stretch;
+    flex-wrap: wrap;
+    width: 100%;
+    padding: 32px 0;
+  }
+
+  .main .program {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    flex: 1;
+    background-color: rgba(211, 211, 211, 0.1);
+    margin: 12px 2px;
+    padding: 12px;
+    vertical-align: top;
+  }
+
+  .main .program-icon {
+    flex: 1;
+  }
+
+  .main .program-title {
+    text-align: center;
+    flex: 1;
+    width: 100%;
+  }
+
+  .main .program-description {
+    text-align: center;
+    flex: 1;
+    width: 100%;
+  }
+
+  .main .btn-join-ashenda-2022 {
+    display: none;
+  }
+
+  .main .see-whole-program-link {
+    color: #fff;
+    text-transform: uppercase;
+    font-weight: 500;
+  }
+
+  .about-ashenda-2022-log {
+    padding-left: 5%;
+  }
+
+  .about-ashenda-2022-log .section-title {
+    padding-top: 36px;
+  }
+
+  .about-ashenda-2022-log .ashenda-log-container {
+    outline: 1px solid #d3d3d3;
+    width: auto;
+    margin: 24px 0;
+  }
+
+  .featured-speakers .container {
+    padding-left: 5%;
+    padding-right: 5%;
+  }
+
+  .featured-speakers .speaker-container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+
+  .featured-speakers .speaker {
+    max-width: 45%;
+  }
+
+  .featured-speakers .speaker .thumbnail-image .black-white-pattern-bg-blur {
+    display: block;
+    max-width: 75%;
+    max-height: 75%;
+    position: absolute;
+    left: 0;
+    top: 0;
+  }
+
+  .featured-speakers .speaker .thumbnail-image .black-white-pattern-bg {
+    display: none;
+  }
+
+  .featured-speakers .show-more-container {
+    display: none;
+  }
+
+  .previous-ashenda-festivals {
+    border-top: 1px solid #d3d3d3;
+    padding-top: 24px;
+    padding-left: 15%;
+  }
+
+  .previous-ashenda-festivals .previous-festivals-container {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 100%;
+    padding-top: 24px;
+  }
+
+  .previous-festivals-container .previous-festival {
+    width: 49%;
+  }
+
+  .about-partners {
+    display: none;
+  }
+
+  .footer {
+    background-color: #fff;
+    color: #272a31;
+  }
+
+  .footer .container {
+    padding-left: 5%;
+    padding-right: 5%;
+  }
+
+  .footer .ashenda-logo-footer p {
+    display: inline-block;
+  }
+
+  .about-footer {
+    background-color: #272a31;
+    margin-left: 0;
+    color: #fff;
+  }
+
+  .footer .about-container {
+    padding-left: 5%;
+  }
+
+  .footer .about-container .ashenda-logo-footer {
+    width: 50%;
+    text-align: center;
+  }
+
+  .footer .about-container .ashenda-logo-footer p {
+    display: inline-block;
+  }
 }
