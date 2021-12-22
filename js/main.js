@@ -101,7 +101,7 @@ function generateSpeakers(from, to) {
             <div class="speaker-info">
               <h4 class="name">${speakers[i].title} ${speakers[i].fullName}</h4>
               <p class="job-title">${speakers[i].currentJob}</p>
-              <p class="program-description">
+              <p class="introduction">
                 ${speakers[i].introduction}
               </p>
             </div>`;

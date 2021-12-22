@@ -388,7 +388,13 @@ a:hover {
 .featured-speakers .speaker .speaker-info .job-title {
   color: #ec5242;
   font-weight: 600;
+  font-size: 14px;
   margin: 14px 0;
+}
+
+.featured-speakers .speaker .introduction {
+  font-size: 14px;
+  text-align: justify;
 }
 
 .featured-speakers .show-more-container {
