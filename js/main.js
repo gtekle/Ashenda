@@ -85,12 +85,12 @@ function generateSpeakers(from, to) {
               <img
                 class="black-white-pattern-bg"
                 src="./img/black-and-white-square-mat.png"
-                alt=""
+                alt="black and white squared back shade"
               />
               <img
                 class="black-white-pattern-bg-blur"
                 src="./img/black-and-white-square-mat-blur.png"
-                alt=""
+                alt="black and white squared back shade"
               />
               <img
                 class="thumbnail"
