@@ -6,33 +6,138 @@
   margin: 0;
 }
 
+@font-face {
+  font-family: cocogoose;
+  src: url('../fonts/cocogoose/Cocogoose/cocogoose-pro-regular.ttf');
+}
+
 html {
   font-size: 16px;
 }
 
 body {
   background-color: #fff;
-  margin: 0 auto;
-  max-width: 768px;
   font-family: 'Lato', sans-serif;
 }
 
+img {
+  max-width: 100%;
+}
+
+a {
+  color: #272a31;
+  font-weight: 700;
+  padding: 6px;
+  min-width: 24px;
+}
+
+a:active {
+  color: #ec5242;
+}
+
+a:hover {
+  outline: 1px dotted #ec5242;
+}
+
+.active {
+  color: #ec5242;
+}
+
 .container {
-  margin: 0 16px;
+  max-width: 94%;
+  margin: 0 auto;
   display: flex;
 }
 
 .header {
+  background-image: url('../img/header-shapes-mobile.png');
+  background-size: cover;
+  background-repeat: no-repeat;
   width: 100%;
   min-height: 100vh;
-  padding: 12px 0;
+  padding: 24px 0;
   background-color: rgba(211, 211, 211, 0.4);
 }
 
+.header .container {
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 0 16px;
+}
+
+.header .nav-bar {
+  display: flex;
+  position: fixed;
+  background-color: rgba(255, 255, 255, 0.2);
+  margin-left: 0;
+  top: 0;
+  z-index: 10;
+  width: 100%;
+}
+
 .header .logo,
-.nav-list,
-.mobile-nav-menu {
+.btn-compain {
   display: none;
+}
+
+.header .social-media-links {
+  display: none;
+}
+
+.header .nav-menu .nav-list {
+  display: none;
+}
+
+.header .nav-menu .btn-mobile-menu {
+  color: #272a31;
+  font-size: 36px;
+  margin-left: 20px;
+  font-weight: bold;
+  z-index: 11;
+}
+
+.header .mobile-nav-menu {
+  display: none;
+  position: absolute;
+  top: 0;
+  width: 100vw;
+  height: 100vh;
+  margin-left: 0;
+  background-color: rgba(236, 82, 66, 0.75);
+  backdrop-filter: blur(5px);
+  z-index: 300;
+}
+
+.mobile-nav-menu .btn-menu-close {
+  position: absolute;
+  top: 5%;
+  right: 10%;
+  color: #fff;
+  font-weight: 400;
+  font-size: 24px;
+}
+
+.mobile-nav-list {
+  display: flex;
+  flex-direction: column;
+  list-style: none;
+  margin-top: 10%;
+  padding: 0 24px;
+}
+
+.mobile-nav-list .nav-link {
+  padding: 10px 0;
+}
+
+.mobile-nav-list .nav-link a {
+  text-decoration: none;
+  font-size: 32px;
+  font-weight: 600;
+  color: #fff;
+}
+
+.mobile-nav-list .nav-link a:hover {
+  color: #aaa;
 }
 
 .header .hero {
@@ -41,30 +146,66 @@ body {
   padding: 24px 0;
 }
 
+.header .about-hero {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 12px 16px;
+}
+
 .header .event-theme {
   color: #ec5242;
   margin: 8px 0;
 }
 
 .header .event-title {
+  background-image: url('../img/artist-eden-gebreselassie-pic.png');
+  background-size: contain;
   color: #ec5242;
-  font-size: 42px;
+  font-size: 36px;
   font-weight: 700;
+  font-family: cocogoose, sans-serif;
   text-transform: uppercase;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.header .about-hero .about-event-title {
+  color: #ec5242;
+  font-size: 36px;
+  font-weight: 700;
+  font-family: cocogoose, sans-serif;
+  text-transform: uppercase;
+  text-align: justify;
 }
 
 .header .short-description {
   border: 2px solid #fff;
+  background-color: #e3e3e3;
   color: #272a31;
   line-height: 24px;
   padding: 20px 12px;
   margin: 16px 0;
 }
 
+.header .about-hero .short-description {
+  background-color: #fff;
+  text-align: center;
+}
+
+.header .about-hero .contact-us {
+  text-align: center;
+}
+
+.header .about-hero .contact-us .contact-us-text {
+  padding: 16px 0;
+}
+
 .header .event-date {
   color: #272a31;
   font-size: 26px;
   font-weight: 700;
+  font-family: cocogoose, sans-serif;
 }
 
 .header .event-place {
@@ -73,10 +214,16 @@ body {
 }
 
 .main {
-  background-image: url("../img/main-section-desktop-background-init.png");
+  background-image: url('../img/main-section-desktop-background-init.png');
   background-size: contain;
   background-repeat: repeat;
-  padding: 24px 0;
+  text-align: center;
+}
+
+.main .container {
+  flex-direction: column;
+  align-items: center;
+  padding: 42px 0;
 }
 
 .main .section-title {
@@ -86,51 +233,112 @@ body {
   width: 100%;
 }
 
-.main .section-title-underline {
-  width: 50px;
+.section-title-underline {
+  width: 30px;
   font-size: 2px;
   margin: 16px 0;
-  margin-left: calc(50% - 25px);
   border: 1px solid#ec5242;
 }
 
 .main .program {
   display: flex;
-  margin: 12px;
-  padding: 12px;
+  flex-direction: row;
   justify-content: space-between;
   align-items: center;
+  margin: 12px 12px;
+  padding: 0 6px;
   width: calc(100% - 24px);
   background-color: rgba(211, 211, 211, 0.1);
 }
 
+.main .program:hover {
+  outline: 2px solid #fff;
+}
+
+.main .program-icon {
+  flex: 1;
+  text-align: left;
+  max-width: 50px;
+  max-height: 50px;
+  margin-right: 12px;
+}
+
 .main .program-title {
+  flex: 2;
   color: #ec5242;
   width: 20%;
-  font-size: 20px;
+  font-size: 14px;
   font-weight: 700;
   text-transform: capitalize;
+  margin-top: 12px;
+  text-align: center;
 }
 
 .main .program-description {
+  flex: 4;
   color: #fff;
+  font-size: 13px;
   line-height: 24px;
-  width: 60%;
+  text-align: left;
+  margin: 12px 6px;
+}
+
+.main .btn-join-ashenda-2022 {
+  display: block;
+  background-color: #ec5242;
+  color: #fff;
+  font-size: 24px;
+  font-weight: 400;
+  padding: 24px;
+  margin-top: 24px;
+  outline: none;
+  border: none;
+}
+
+.about-ashenda-2022-log .container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 12px 24px;
+}
+
+.about-ashenda-2022-log .ashenda-log-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 16px;
+  width: 100%;
+  margin: 12px 0;
+}
+
+.about-ashenda-2022-log .ashenda-log-container .ashenda-logo-text {
+  margin-left: 16px;
+  font-size: 28px;
+  line-height: 28px;
+  color: #272a31;
+  font-weight: 700;
 }
 
 .featured-speakers {
-  padding: 24px 0;
+  padding: 12px 0;
+}
+
+.featured-speakers .container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 
 .featured-speakers .section-title {
   text-align: center;
   color: #272a31;
   font-size: 20px;
+  font-weight: 700;
   width: 100%;
 }
 
 .featured-speakers .section-title-underline {
-  width: 50px;
+  width: 30px;
   font-size: 2px;
   margin: 16px 0;
   margin-left: calc(50% - 25px);
@@ -140,19 +348,504 @@ body {
 .featured-speakers .speaker {
   display: flex;
   justify-content: space-between;
-  align-items: center;
+  align-items: flex-start;
   margin: 12px;
   padding: 12px;
   width: calc(100% - 24px);
 }
 
+.featured-speakers .speaker .thumbnail-image {
+  text-align: center;
+  position: relative;
+  width: 30%;
+}
+
+.featured-speakers .speaker .thumbnail-image .black-white-pattern-bg {
+  max-width: 75%;
+  max-height: 75%;
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+
+.featured-speakers .speaker .thumbnail-image .black-white-pattern-bg-blur {
+  display: none;
+}
+
+.featured-speakers .speaker .thumbnail {
+  width: 100%;
+  position: relative;
+  margin-top: 20px;
+  margin-left: 20px;
+  z-index: 3;
+}
+
 .featured-speakers .speaker .speaker-info {
-  width: 70%;
+  width: 60%;
   color: #272a31;
 }
 
 .featured-speakers .speaker .speaker-info .job-title {
   color: #ec5242;
   font-weight: 600;
+  font-size: 14px;
   margin: 14px 0;
+}
+
+.featured-speakers .speaker .introduction {
+  font-size: 14px;
+  text-align: justify;
+}
+
+.featured-speakers .show-more-container {
+  display: block;
+  width: 100%;
+  padding: 0 16px;
+}
+
+.featured-speakers .show-more-container .btn-more {
+  width: 100%;
+  padding: 12px;
+  font-size: 16px;
+  font-weight: 700;
+  color: #272a31;
+  background-color: #fff;
+  border: 1px solid #d3d3d3;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.featured-speakers .btn-more .fa-angle-down,
+.fa-angle-up {
+  color: #ec5242;
+  padding: 0;
+  margin: 0;
+  font-size: 24px;
+  font-weight: 700;
+  margin-left: 6px;
+}
+
+.previous-ashenda-festivals .container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 12px 16px;
+  padding: 12px 24px;
+}
+
+.previous-ashenda-festivals .previous-festivals-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.previous-ashenda-festivals .previous-festivals-container .previous-festival {
+  position: relative;
+  text-align: center;
+  min-height: 20px;
+  margin: 12px 0;
+}
+
+.previous-ashenda-festivals .previous-festivals-container .festival-year-place {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(236, 82, 66, 0.75);
+  color: #fff;
+  font-size: 22px;
+  font-weight: 500;
+}
+
+.previous-ashenda-festivals .festival-year-place .festival-year {
+  font-size: 36px;
+  font-weight: 700;
+}
+
+.partners {
+  background-color: #272a31;
+  padding: 48px 24px;
+}
+
+.partners .container {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-items: center;
+  padding-left: 5%;
+  padding-right: 5%;
+}
+
+.partners .section-title {
+  color: #fff;
+}
+
+.partners .sponsors {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  width: 100%;
+  padding-top: 24px;
+}
+
+.partners .sponsor-logo {
+  max-width: 75px;
+  max-height: 75px;
+  margin-right: 16px;
+}
+
+.about-partners {
+  display: block;
+}
+
+.footer {
+  margin: 12px 16px;
+  padding: 36px;
+}
+
+.footer .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.footer .copy-right {
+  width: 60%;
+}
+
+@media screen and (min-width: 768px) {
+  .container {
+    max-width: 85%;
+  }
+
+  .header {
+    padding: 0;
+  }
+
+  .header .container {
+    padding: 60px 7.5%;
+  }
+
+  .header .nav-bar {
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    padding: 0 12.5%;
+    margin-top: 22px;
+    background-color: #fff;
+    -moz-box-shadow: 2px 2px 4px #d3d3d3;
+    -webkit-box-shadow: 2px 2px 4px #d3d3d3;
+    box-shadow: 2px 2px 4px #d3d3d3;
+  }
+
+  .about .nav-bar {
+    padding-left: 20%;
+    margin-bottom: 12px;
+  }
+
+  .header .logo,
+  .btn-compain {
+    display: block;
+  }
+
+  .header .social-media-links {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    height: 22px;
+    color: #fff;
+    font-weight: 400;
+    font-size: 12px;
+    background-color: #272a31;
+    width: 100%;
+    padding: 6px 12.5%;
+    z-index: 10;
+  }
+
+  .header .social-media-links a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: 500;
+    font-size: 12px;
+    margin-right: 16px;
+  }
+
+  .header .social-media-links span + span {
+    color: #fff;
+    font-weight: 500;
+    font-size: 12px;
+    margin-left: 16px;
+  }
+
+  .header .logo,
+  .nav-menu,
+  .btn-compain {
+    display: block;
+  }
+
+  .header .logo {
+    min-width: 185px;
+  }
+
+  .header .logo .secondary-logo-text {
+    letter-spacing: 3px;
+  }
+
+  .header .nav-menu {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .header .logo .logo-link {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    color: #272a31;
+    font-weight: 600;
+    text-transform: capitalize;
+    text-decoration: none;
+  }
+
+  .logo .logo-text-container {
+    margin-left: 16px;
+    color: #272a31;
+    font-size: 20px;
+  }
+
+  .logo .primary-logo-text {
+    font-size: 24px;
+    font-weight: 700;
+  }
+
+  .header .nav-menu a {
+    text-decoration: none;
+    margin-right: 16px;
+  }
+
+  .header .nav-menu .btn-mobile-menu {
+    display: none;
+  }
+
+  .header .nav-menu .nav-list {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    list-style: none;
+  }
+
+  .header .nav-menu .nav-list .nav-link a {
+    margin-right: 6px;
+  }
+
+  .header .nav-menu .btn-compain {
+    padding: 8px;
+    color: #ec5242;
+    background-color: #fff;
+    font-size: 18px;
+    font-weight: 700;
+    border: 3px solid #ec5242;
+    align-self: flex-end;
+    margin-left: 24px;
+  }
+
+  .header .hero .short-description {
+    max-width: 60%;
+    margin-bottom: 16px;
+  }
+
+  .about {
+    min-height: auto;
+    border-bottom: 1px solid #d3d3d3;
+  }
+
+  .about .container {
+    padding-bottom: 0;
+  }
+
+  .header .about-hero {
+    padding-top: 36px;
+    margin-top: 24px;
+  }
+
+  .header .about-hero .about-event-title {
+    font-size: 48px;
+    line-height: 48px;
+  }
+
+  .header .about-hero .short-description {
+    outline: 1px solid #d3d3d3;
+    max-width: 70%;
+  }
+
+  .header .event-title {
+    font-size: 56px;
+    line-height: 56px;
+  }
+
+  .header .event-date {
+    font-family: cocogoose, sans-serif;
+    font-size: 48px;
+  }
+
+  .main .container {
+    padding-left: 5%;
+    padding-right: 5%;
+  }
+
+  .main .program-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: stretch;
+    flex-wrap: wrap;
+    width: 100%;
+    padding: 32px 0;
+  }
+
+  .main .program {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    flex: 1;
+    background-color: rgba(211, 211, 211, 0.1);
+    margin: 12px 2px;
+    padding: 12px 6px;
+    vertical-align: top;
+  }
+
+  .main .program-icon {
+    flex: 1;
+  }
+
+  .main .program-title {
+    text-align: center;
+    flex: 1;
+    font-size: 20px;
+    width: 100%;
+  }
+
+  .main .program-description {
+    text-align: center;
+    flex: 1;
+    width: 100%;
+  }
+
+  .main .btn-join-ashenda-2022 {
+    display: none;
+  }
+
+  .main .see-whole-program-link {
+    color: #fff;
+    text-transform: uppercase;
+    font-weight: 500;
+  }
+
+  .about-ashenda-2022-log {
+    padding-left: 5%;
+  }
+
+  .about-ashenda-2022-log .section-title {
+    padding-top: 36px;
+  }
+
+  .about-ashenda-2022-log .ashenda-log-container {
+    outline: 1px solid #d3d3d3;
+    width: auto;
+    margin: 24px 0;
+  }
+
+  .featured-speakers .container {
+    padding-left: 5%;
+    padding-right: 5%;
+  }
+
+  .featured-speakers .speaker-container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+
+  .featured-speakers .speaker {
+    max-width: 45%;
+  }
+
+  .featured-speakers .speaker .thumbnail-image .black-white-pattern-bg-blur {
+    display: block;
+    max-width: 75%;
+    max-height: 75%;
+    position: absolute;
+    left: 0;
+    top: 0;
+  }
+
+  .featured-speakers .speaker .thumbnail-image .black-white-pattern-bg {
+    display: none;
+  }
+
+  .featured-speakers .show-more-container {
+    display: none;
+  }
+
+  .previous-ashenda-festivals {
+    border-top: 1px solid #d3d3d3;
+    padding-top: 24px;
+    padding-left: 15%;
+  }
+
+  .previous-ashenda-festivals .previous-festivals-container {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 100%;
+    padding-top: 24px;
+  }
+
+  .previous-festivals-container .previous-festival {
+    width: 49%;
+  }
+
+  .about-partners {
+    display: none;
+  }
+
+  .footer {
+    background-color: #fff;
+    color: #272a31;
+  }
+
+  .footer .container {
+    padding-left: 5%;
+    padding-right: 5%;
+  }
+
+  .footer .ashenda-logo-footer p {
+    display: inline-block;
+  }
+
+  .about-footer {
+    background-color: #272a31;
+    margin-left: 0;
+    color: #fff;
+  }
+
+  .footer .about-container {
+    padding-left: 5%;
+  }
+
+  .footer .about-container .ashenda-logo-footer {
+    width: 50%;
+    text-align: center;
+  }
+
+  .footer .about-container .ashenda-logo-footer p {
+    display: inline-block;
+  }
 }
