@@ -55,7 +55,8 @@ const speakers = [
     fullName: 'Nigussie Abadi',
     thumbnailImage: './img/artist-niguse-abadi-pic.png',
     currentJob: 'Renowned Tigrinya Singer',
-    introduction: 'Solomon Bayre (aka Zemay) is a well-known Ethiopian artist.',
+    introduction:
+      'Nigussie Abadi (aka Zemay) is a well-known Ethiopian artist. Some of his popular songs are Taga and Zemay',
   },
   {
     title: 'Artist',
