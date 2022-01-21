@@ -20,7 +20,7 @@ This website is designed as part of compain for a yearly culutral event that tak
 
 ## Live Demo
 
-- [Live Demo Link](https://gtekle.github.io/Ashenda/)
+- [Live Demo Link](https://ashenda-tigray-2022.netlify.app/)
 - [Video Demo Link](https://www.loom.com/share/3238186761d54c5a8be6539628b5279c)
 
 ## Getting Started
