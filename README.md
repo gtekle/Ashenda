@@ -4,7 +4,12 @@
 
 > Ashenda Tigrai Festival 2022
 
+### Desktop Version
+
 ![Desktop Version](./img/ashenda-project-snapshot-desktop.png)
+
+### Mobile Version
+
 ![screenshot](./img/ashenda-project-snapshot-mobile.png)
 
 This website is designed as part of compain for a yearly culutral event that takes places in the northern part of Ethiopia - Ashenda Festival 2022.
@@ -20,8 +25,11 @@ This website is designed as part of compain for a yearly culutral event that tak
 
 ## Getting Started
 
--Install Node.js
--Install text editor of your choice (eg. VS Code)
+- Install Node.js
+- Install text editor of your choice (eg. VS Code)
+- Clone the repository from [here](https://github.com/gtekle/Ashenda.git)
+- On the root directory, run 'npm install' on the terminal to install packages.
+- Open the index.html file in your browser to check your updates and navigate to other pages.
 
 ## Authors
 
@@ -42,7 +50,7 @@ Give a ⭐️ if you like this project!
 
 ## Acknowledgments
 
-- Microverse Inc
+- [Microverse Inc](https://www.microverse.org/)
 - [Original design idea by Cindy Shin in Behance](https://www.behance.net/adagio07)
 
 ## 📝 License

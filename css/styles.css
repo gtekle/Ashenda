@@ -51,12 +51,12 @@ a:hover {
 
 .header {
   background-image: url('../img/header-shapes-mobile.png');
-  background-size: cover;
-  background-repeat: no-repeat;
+  background-size: 92%;
+  background-repeat: repeat;
   width: 100%;
   min-height: 100vh;
   padding: 24px 0;
-  background-color: rgba(211, 211, 211, 0.4);
+  background-color: rgba(211, 211, 211, 0.07);
 }
 
 .header .container {
@@ -159,7 +159,7 @@ a:hover {
 }
 
 .header .event-title {
-  background-image: url('../img/artist-eden-gebreselassie-pic.png');
+  background-image: url('../img/background-image.jpg');
   background-size: contain;
   color: #ec5242;
   font-size: 36px;
@@ -180,10 +180,13 @@ a:hover {
 }
 
 .header .short-description {
-  border: 2px solid #fff;
-  background-color: #e3e3e3;
-  color: #272a31;
-  line-height: 24px;
+  background-color: rgb(247, 239, 239);
+  color: black;
+  border-radius: 5px;
+  font-size: 14px;
+  letter-spacing: 1.3px;
+  font-weight: 600;
+  line-height: 26px;
   padding: 20px 12px;
   margin: 16px 0;
 }
